@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="A tiny mood lottery. Press a button and meet one of Ellie's many moods.">
+  <title>Ellie’s Random Mood</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="back" href="../"><span aria-hidden="true">←</span> Hello, world</a>
+    <span class="edition">A tiny game, a big feeling.</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow"><span aria-hidden="true">✳</span> The little mood lottery</p>
+      <h1 id="title">Ellie’s<br> random <em>mood.</em></h1>
+      <p class="lede">A little sunshine. A little side-eye.<br>Which Ellie are we getting today?</p>
+    </section>
+    <section class="machine" aria-label="Random mood generator">
+      <div class="card" id="mood-card" data-mood="waiting">
+        <div class="card-top"><span>MOOD NO. <span id="draw-number">—</span></span><span class="live-dot" aria-hidden="true"></span></div>
+        <div class="portrait" id="portrait" aria-hidden="true">
+          <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span>
+          <div class="mystery" id="mystery">?</div>
+          <img id="mood-image" alt="" width="640" height="640" hidden>
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
+        </div>
+        <div class="result" role="status" aria-live="polite" aria-atomic="true">
+          <p class="result-kicker" id="result-kicker">Anything could happen</p>
+          <h2 id="mood-name">A mood is waiting.</h2>
+          <p class="mood-caption" id="mood-caption">One button. Endless Ellie energy.</p>
+        </div>
+      </div>
+      <button id="generate" type="button"><span id="button-label">Generate mood</span><span class="button-spark" aria-hidden="true">✳</span></button>
+      <noscript><p class="hint">Enable JavaScript to play the mood lottery.</p></noscript>
+      <p class="hint">Leave it to chance. Tap again for a new mood.</p>
+    </section>
+  </main>
+  <footer><span>Made for all of Ellie’s little plot twists.</span><span class="footer-mark" aria-hidden="true">♡</span><span>Four moods. One Ellie.</span></footer>
+</body>
+</html>
