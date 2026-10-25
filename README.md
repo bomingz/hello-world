@@ -3,7 +3,7 @@
 A minimalist static site, published with GitHub Pages.
 
 - [Homepage](https://bomingz.github.io/hello-world/)
-- [Ellie’s Random Mood](https://bomingz.github.io/hello-world/ellies-random-mood/): a tiny game with four abstract emoji and a random mood button.
+- [Ellie’s Random Mood](https://bomingz.github.io/hello-world/ellies-random-mood/): a playful game with four abstract emoji, a random mood button, and switchable Farm Friends and Ocean Pals worlds.
 
 ## Local preview
 

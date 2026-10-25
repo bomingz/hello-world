@@ -3,43 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f4ed">
-  <meta name="description" content="A tiny mood lottery. Press a button and meet one of Ellie's many moods.">
+  <meta name="theme-color" content="#dff5fd">
+  <meta name="description" content="Visit a farm full of friends or dive into an ocean of feelings. Tap to discover Ellie's random mood.">
   <title>Ellie’s Random Mood</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="game.js?v=2" defer></script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="game.js?v=3" defer></script>
 </head>
-<body>
+<body data-world="farm">
+  <div class="scenery" aria-hidden="true">
+    <div class="sun">☀</div>
+    <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="cloud cloud-three"></div>
+    <div class="hill hill-one"></div><div class="hill hill-two"></div><div class="ground"></div>
+    <div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div>
+    <div class="animal-group farm-animals">
+      <span class="animal a1">🐮</span><span class="animal a2">🐑</span><span class="animal a3">🐷</span><span class="animal a4">🐔</span>
+      <span class="animal a5">🐴</span><span class="animal a6">🐥</span><span class="animal a7">🦆</span><span class="animal a8">🐰</span>
+      <span class="flower f1">🌼</span><span class="flower f2">🌷</span><span class="flower f3">🌼</span><span class="flower f4">🌷</span>
+    </div>
+    <div class="animal-group ocean-animals">
+      <span class="animal a1">🐳</span><span class="animal a2">🐢</span><span class="animal a3">🐬</span><span class="animal a4">🐠</span>
+      <span class="animal a5">🐙</span><span class="animal a6">🦀</span><span class="animal a7">🐡</span><span class="animal a8">🪼</span>
+      <span class="flower f1">🪸</span><span class="flower f2">🐚</span><span class="flower f3">🪸</span><span class="flower f4">⭐</span>
+    </div>
+  </div>
   <header class="topbar">
     <a class="back" href="../"><span aria-hidden="true">←</span> Hello, world</a>
-    <span class="edition">A tiny game, a big feeling.</span>
+    <span class="edition"><span aria-hidden="true">🌈</span> Ellie’s little world</span>
   </header>
   <main>
     <section class="intro" aria-labelledby="title">
-      <p class="eyebrow"><span aria-hidden="true">✳</span> The little mood lottery</p>
-      <h1 id="title">Ellie’s<br> random <em>mood.</em></h1>
-      <p class="lede">A little sunshine. A little side-eye.<br>Which Ellie are we getting today?</p>
+      <p class="eyebrow"><span aria-hidden="true">✨</span> Small human. Big feelings.</p>
+      <h1 id="title">Ellie’s <span>random</span> <em>mood!</em></h1>
+      <p class="lede" id="theme-caption">A farm full of friends. One surprise feeling.</p>
+      <div class="world-picker" role="group" aria-label="Choose your animal world">
+        <button class="world-button" type="button" data-world-choice="farm" aria-pressed="true"><span aria-hidden="true">🐮</span> Farm friends</button>
+        <button class="world-button" type="button" data-world-choice="ocean" aria-pressed="false"><span aria-hidden="true">🐳</span> Ocean pals</button>
+      </div>
     </section>
     <section class="machine" aria-label="Random mood generator">
       <div class="card" id="mood-card" data-mood="waiting">
-        <div class="card-top"><span>MOOD NO. <span id="draw-number">—</span></span><span class="live-dot" aria-hidden="true"></span></div>
+        <div class="card-top"><span><span aria-hidden="true">✿</span> THE MOOD-O-METER</span><span class="draw-badge">NO. <span id="draw-number">—</span></span></div>
         <div class="portrait" id="portrait" aria-hidden="true">
-          <span class="spark spark-one">✦</span><span class="spark spark-two">✧</span>
+          <span class="spark spark-one">✦</span><span class="spark spark-two">✦</span>
           <div class="mystery" id="mystery">?</div>
           <img id="mood-image" alt="" width="640" height="640" hidden>
           <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span>
         </div>
         <div class="result" role="status" aria-live="polite" aria-atomic="true">
-          <p class="result-kicker" id="result-kicker">Anything could happen</p>
-          <h2 id="mood-name">A mood is waiting.</h2>
-          <p class="mood-caption" id="mood-caption">One button. Endless Ellie energy.</p>
+          <p class="result-kicker" id="result-kicker">Ready for a little surprise?</p>
+          <h2 id="mood-name">What’s the feeling?</h2>
+          <p class="mood-caption" id="mood-caption">Happy? Sleepy? A tiny bit grumpy?</p>
         </div>
       </div>
-      <button id="generate" type="button"><span id="button-label">Generate mood</span><span class="button-spark" aria-hidden="true">✳</span></button>
+      <button id="generate" type="button"><span aria-hidden="true">🎲</span><span id="button-label">Generate mood</span><span class="button-spark" aria-hidden="true">✦</span></button>
       <noscript><p class="hint">Enable JavaScript to play the mood lottery.</p></noscript>
-      <p class="hint">Leave it to chance. Tap again for a new mood.</p>
+      <p class="hint">Tap, smile, repeat. Every feeling belongs here.</p>
     </section>
   </main>
-  <footer><span>Made for all of Ellie’s little plot twists.</span><span class="footer-mark" aria-hidden="true">♡</span><span>Four moods. One Ellie.</span></footer>
+  <footer><span aria-hidden="true">💛</span> A whole world of feelings. A whole lot of Ellie.</footer>
 </body>
 </html>

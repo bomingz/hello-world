@@ -74,3 +74,17 @@ button.addEventListener("click", async () => {
   button.disabled = false;
   button.removeAttribute("aria-busy");
 });
+
+// Switch the scenery without interrupting the current mood.
+const worldButtons = document.querySelectorAll("[data-world-choice]");
+const themeCaption = document.querySelector("#theme-caption");
+worldButtons.forEach(worldButton => {
+  worldButton.addEventListener("click", () => {
+    const world = worldButton.dataset.worldChoice;
+    document.body.dataset.world = world;
+    worldButtons.forEach(option => option.setAttribute("aria-pressed", String(option === worldButton)));
+    themeCaption.textContent = world === "ocean"
+      ? "An ocean full of pals. One surprise feeling."
+      : "A farm full of friends. One surprise feeling.";
+  });
+});
