@@ -17,3 +17,24 @@ Use case: precise-object-edit. Asset type: one emoji PNG sticker for a mini mood
 ## grumpy — ellies-random-mood/assets/grumpy.png
 
 Use case: precise-object-edit. Asset type: one emoji PNG sticker for a mini mood game. Input image 1 is the emoji CHARACTER DESIGN to preserve. Change ONLY the facial expression to GRUMPY / comically unimpressed: two short simple dark oval eyes looking sideways, sharply inward-tilted cartoon eyebrows and a tiny protruding pout, gently squished cheek discs. Amusing mild toddler indignation, not threatening or distressed. Keep exactly the same round apricot clay-ball silhouette, three-part dark brown swooped tuft, pink circular cheeks, material, front view, face scale, lighting, centered square composition and transparent padding. This is a generic abstract emoji; keep it completely non-photorealistic and non-identifying, no realistic human face, no nose or ears. Do not add props, text, mood symbols, clothing, body, hands, extra faces, background or watermark. Truly transparent background. One single isolated head, entire silhouette inside the canvas.
+
+
+## Hair update — built-in image_gen
+
+The four current PNGs use side-swept bangs and short pigtails with lilac bows.
+
+### Sunny hair edit
+
+Use case: precise-object-edit. Edit this transparent clay emoji sticker. Change ONLY the HAIRSTYLE to a cute little girl's hair: dark brown soft side-swept bangs resting across the top of the forehead, and TWO short small pigtails, one on each upper side of the head, fastened with tiny pale lilac ribbon bows. The hair should be simple, rounded, soft matte clay shapes matching the existing toy material. Remove the current three-part tall boyish swooped tuft completely. Preserve the same apricot round face, same pink cheek discs, EXACT happy closed crescent eyes and joyful open mouth, same lighting and clay material, front view and size. Keep abstract and non-identifying, no realistic human features, no nose or ears. Head only. Center the entire head including both pigtails inside a square with 12 percent transparent padding on every side. Do not crop the hair. Truly transparent background. No body, clothes, props, text, watermark or extra characters.
+
+### cheeky hair edit
+
+undefined
+
+### sleepy hair edit
+
+undefined
+
+### grumpy hair edit
+
+undefined

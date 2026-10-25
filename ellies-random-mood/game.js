@@ -24,7 +24,7 @@ const loadAssets = () => Promise.all(moods.map(mood => new Promise(resolve => {
   const sticker = new Image();
   sticker.onload = () => resolve(true);
   sticker.onerror = () => resolve(false);
-  sticker.src = `assets/${mood.id}.png`;
+  sticker.src = `assets/${mood.id}.png?v=2`;
 })));
 let assetsReady = loadAssets();
 
@@ -60,7 +60,7 @@ button.addEventListener("click", async () => {
   draws += 1;
   card.dataset.mood = mood.id;
   number.textContent = String(draws).padStart(2, "0");
-  image.src = `assets/${mood.id}.png`;
+  image.src = `assets/${mood.id}.png?v=2`;
   // The nearby live text describes the mood; the sticker is decorative.
   image.alt = "";
   name.textContent = mood.name;
